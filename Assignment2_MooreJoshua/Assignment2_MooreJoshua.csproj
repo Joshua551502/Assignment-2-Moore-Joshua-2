@@ -366,10 +366,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DatabaseHarryRosen.mdf">
+    <Content Include="AppData\DatabaseHarryRosen.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="DatabaseHarryRosen_log.ldf">
+    <Content Include="AppData\DatabaseHarryRosen_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DatabaseHarryRosen.mdf</DependentUpon>
     </Content>

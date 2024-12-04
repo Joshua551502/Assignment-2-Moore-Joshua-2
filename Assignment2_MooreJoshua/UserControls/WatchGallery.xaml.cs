@@ -16,7 +16,7 @@ namespace Assignment2_MooreJoshua.UserControls
     public partial class WatchGallery : UserControl
     {
         public ObservableCollection<Item> Watches { get; set; }
-        private bool _isLoading = false; // Prevent concurrent calls
+        private bool _isLoading = false;
         /// <summary>
         /// Author: Joshua Moore
         /// Course: .Net Technologies using C#
@@ -26,13 +26,10 @@ namespace Assignment2_MooreJoshua.UserControls
         {
             InitializeComponent();
 
-            // Initialize the collection
             Watches = new ObservableCollection<Item>();
 
-            // Fetch data from the database
             LoadData();
 
-            // Bind the data to the DataContext
             DataContext = this;
         }
         /// <summary>

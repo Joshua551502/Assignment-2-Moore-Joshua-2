@@ -110,7 +110,7 @@ namespace Assignment2_MooreJoshua.Services
 
             try
             {
-                _adapter.Insert(name, description, price, type, imageSource); // Ensure the order matches the SQL query
+                _adapter.Insert(name, description, price, type, imageSource);
                 MessageBox.Show($"Item {name} added successfully!");
             }
             catch (Exception ex)

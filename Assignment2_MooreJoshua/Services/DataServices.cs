@@ -86,7 +86,6 @@ namespace Assignment2_MooreJoshua.Services
                                     ItemPrice = reader.GetDecimal(5)
                                 };
 
-                                // Add item on UI thread
                                 Application.Current.Dispatcher.Invoke(() => items.Add(item));
                             }
                         }

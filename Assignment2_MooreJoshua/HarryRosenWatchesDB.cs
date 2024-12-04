@@ -18,7 +18,7 @@ namespace Assignment2_MooreJoshua
         /// Date Created: 2024-12-01
         /// </summary>
         public HarryRosenWatchesDB()
-            : base("HarryRosenWatchesDB") // Matches the connection string name
+            : base("HarryRosenWatchesDB")
         {
             Database.SetInitializer(new CreateDatabaseIfNotExists<HarryRosenWatchesDB>());
         }

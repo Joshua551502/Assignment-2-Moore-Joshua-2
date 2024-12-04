@@ -15,7 +15,7 @@
             <ColumnDefinition Width="2*" />
         </Grid.ColumnDefinitions>
 
-        <!-- Main Content -->
+
         <StackPanel
             Grid.Column="1"
             Margin="0,0,0,0"
@@ -30,7 +30,7 @@
                 BorderBrush="White"
                 BorderThickness="0,0,0,2">
                 <Grid Margin="8,0,0,0" HorizontalAlignment="Stretch">
-                    <!-- Main Header -->
+
                     <Label
                         x:Name="PageHeader"
                         Margin="5,0,5,0"
@@ -39,7 +39,7 @@
                         FontSize="25"
                         FontWeight="Bold"
                         Foreground="White" />
-                    <!-- Command Buttons -->
+                
                     <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
                         <Button
                             Margin="10,10,0,0"
@@ -72,8 +72,6 @@
                     </StackPanel>
                 </Grid>
             </Border>
-
-            <!-- Main Description -->
             <TextBlock
                 Margin="20,15,0,0"
                 FontSize="16"
@@ -82,7 +80,6 @@
                 Text="Add, Update or Delete the pocket watch you would like here!"
                 TextWrapping="Wrap" />
 
-            <!-- Watches name -->
             <TextBlock
                 Margin="20,35,0,0"
                 FontSize="16"
@@ -129,7 +126,6 @@ Foreground="DimGray" />
 Foreground="DimGray"/>
         </StackPanel>
 
-        <!-- Watches List with ScrollViewer -->
         <ScrollViewer
             Grid.Column="0"
             VerticalScrollBarVisibility="Auto"
@@ -142,7 +138,6 @@ Foreground="DimGray"/>
                 ItemsSource="{Binding PocketWatchList}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <!-- Watches Menu Item -->
                         <Button
                             Margin="2"
                             HorizontalAlignment="Stretch"

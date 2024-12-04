@@ -12,12 +12,9 @@
         <Border Style="{StaticResource BorderStyleBase}">
             <Grid>
                 <Grid.RowDefinitions>
-                    <!--  Window Menu Bar  -->
                     <RowDefinition Height="Auto" />
-                    <!--  Window Content  -->
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-                <!--  Title Bar  -->
                 <Grid
                 x:Name="GridBrowserHeader"
                 Grid.Row="0"
@@ -27,7 +24,6 @@
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
-                    <!--  Page Title  -->
                     <TextBlock
                     Grid.Column="0"
                     Width="150"
@@ -38,12 +34,10 @@
                     FontFamily="{StaticResource LibreBaskervilleRegular}"
                     Foreground="{StaticResource ForegroundLightBrush}"
                     Text="HARRY ROSEN" />
-                    <!--  Deflt Buttons Rightside  -->
                     <StackPanel
                     Grid.Column="2"
                     HorizontalAlignment="Right"
                     Orientation="Horizontal">
-                        <!--  // Minimize Button //  -->
                         <Button
                         x:Name="MinimizeBtn"
                         Margin="0,0,0,0"
@@ -51,7 +45,7 @@
                         VerticalAlignment="Top"
                         Click="MinimizeBtn_Click"
                         Style="{StaticResource MinAppStyle}" />
-                        <!--  // Maximize Button //  -->
+
                         <Button
                         x:Name="MaximizeBtn"
                         Margin="0,0,0,0"
@@ -59,7 +53,7 @@
                         VerticalAlignment="Top"
                         Click="MaximizeBtn_Click"
                         Style="{StaticResource MaxAppStyle}" />
-                        <!--  // Close Button //  -->
+
                         <Button
                         x:Name="CloseBtn"
                         Margin="0,0,0,0"
@@ -70,7 +64,6 @@
                     </StackPanel>
                 </Grid>
 
-                <!--  Main Content 2x Coloums  -->
                 <Grid
                 Grid.Row="1"
                 Margin="1"
@@ -84,13 +77,10 @@
                         <RowDefinition />
                     </Grid.RowDefinitions>
 
-
-                    <!--  Navigation Pages  -->
                     <StackPanel
                     Grid.Row="1"
                     Margin="5"
                     Background="Transparent">
-                        <!--  Employee Menu Item  -->
                         <RadioButton
         x:Name="HomeBtn"
         HorizontalAlignment="Right"
@@ -117,7 +107,7 @@
 
                             </Grid>
                         </RadioButton>
-                        <!--  Product Menu Item  -->
+
                         <RadioButton
                         x:Name="PocketWacthBtn"
                         HorizontalAlignment="Right"
@@ -132,7 +122,7 @@
 
                             </Grid>
                         </RadioButton>
-                        <!--  Category Menu Item  -->
+
                         <RadioButton
                         x:Name="WatchBoxBtn"
                         HorizontalAlignment="Right"
@@ -148,10 +138,7 @@
                             </Grid>
                         </RadioButton>
                     </StackPanel>
-
-                    
-
-                    <!--  Page Title, Content And Command Buttons  -->
+                 
                     <Grid
                     Grid.Row="1"
                     Grid.Column="1"
@@ -160,8 +147,6 @@
                             <RowDefinition />
                             <RowDefinition Height="50" />
                         </Grid.RowDefinitions>
-
-                        <!--  Page Content - View Pages  -->
 
                         <Frame
                         x:Name="FramePages"

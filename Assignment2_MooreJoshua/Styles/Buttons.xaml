@@ -105,7 +105,7 @@
 
     </Style>
 
-    <!--  Close App Button Style  -->
+
     <ImageBrush
         x:Key="close_def"
         ImageSource="../Assets/Images/menu-icon/close.png"
@@ -116,7 +116,7 @@
         ImageSource="../Assets/Images/menu-icon/close.hover.png"
         Stretch="Uniform" />
 
-    <!--  Maximize App Button Style  -->
+
     <ImageBrush
         x:Key="max_def"
         ImageSource="../Assets/Images/menu-icon/open.png"
@@ -127,7 +127,7 @@
         ImageSource="../Assets/Images/menu-icon/open.hover.png"
         Stretch="Uniform" />
 
-    <!--  App Button Style  -->
+
     <ImageBrush
         x:Key="min_def"
         ImageSource="../Assets/Images/menu-icon/minus.png"
@@ -265,9 +265,7 @@
 
     </Style>
 
-    <!--  Command Buttons for CRUD  -->
 
-    <!--  Add App Button Style  -->
     <ImageBrush
         x:Key="add_def"
         ImageSource="../Assets/Images/menu-icon/plus.square@2x.png"
@@ -278,7 +276,7 @@
         ImageSource="../Assets/Images/menu-icon/plus.square.fill@2x.png"
         Stretch="Uniform" />
 
-    <!--  Edit App Button Style  -->
+
     <ImageBrush
         x:Key="edit_def"
         ImageSource="../Assets/Images/menu-icon/square.and.pencil@2x.png"
@@ -290,7 +288,7 @@
         Stretch="Uniform" />
 
 
-    <!--  Delete App Button Style  -->
+
     <ImageBrush
         x:Key="del_def"
         ImageSource="../Assets/Images/menu-icon/trash.square@2x.png"
@@ -302,7 +300,6 @@
         Stretch="Uniform" />
 
 
-    <!--  Refresh App Button Style  -->
     <ImageBrush
         x:Key="ref_def"
         ImageSource="../Assets/Images/menu-icon/refresh.circle@2x.png"

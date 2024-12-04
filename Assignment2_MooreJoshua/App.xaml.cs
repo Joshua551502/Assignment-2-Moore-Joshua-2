@@ -24,11 +24,16 @@ namespace Assignment2_MooreJoshua
         {
             base.OnStartup(e);
 
-            // Set DataDirectory to the project's root directory
             string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
             string projectRoot = Directory.GetParent(baseDirectory).Parent.Parent.FullName;
+            string appDataPath = Path.Combine(projectRoot, "AppData");
 
-            AppDomain.CurrentDomain.SetData("DataDirectory", projectRoot);
+            if (!Directory.Exists(appDataPath))
+            {
+                Directory.CreateDirectory(appDataPath);
+            }
+
+            AppDomain.CurrentDomain.SetData("DataDirectory", appDataPath);
 
             try
             {
@@ -39,6 +44,7 @@ namespace Assignment2_MooreJoshua
                 MessageBox.Show($"An error occurred: {ex.Message}");
             }
         }
+
 
 
         /// <summary>
@@ -54,15 +60,11 @@ namespace Assignment2_MooreJoshua
                 context.Database.Initialize(force: true);
                 if (!context.Database.Exists())
                 {
-                    MessageBox.Show("Database does not exist. Creating and seeding database...");
                     context.Database.Create();
                 }
 
-                if (!context.Items.Any()) // Only execute inserts if Items table is empty
+                if (!context.Items.Any())
                 {
-                    MessageBox.Show("Database is empty. Seeding data...");
-
-                    // Perform all inserts
                     InsertOrUpdateItem(context, 1, "Frederque Constant", "Watch", "Classic Quartz Chronograph Watch", "/Assets/Images/Watches/fred.jpg", 1395.00m);
                     InsertOrUpdateItem(context, 2, "Citizen", "Watch", "TSUYOSA Collection Watch", "/Assets/Images/Watches/citi.jpg", 595.00m);
                     InsertOrUpdateItem(context, 3, "Shinola", "Watch", "Canfield C56 43mm Watch", "/Assets/Images/Watches/shin.jpg", 1385.00m);
@@ -76,7 +78,6 @@ namespace Assignment2_MooreJoshua
                     InsertOrUpdateItem(context, 11, "Rapport London", "Pocket Watch", "Mechanical Full Hunter Pocket Watch", "/Assets/Images/Watches/pocket_watch_3.jpeg", 395.00m);
                     InsertOrUpdateItem(context, 12, "Rapport London", "Pocket Watch", "Mechanical Half Hunter Pocket Watch", "/Assets/Images/Watches/pocket_watch_4.jpeg", 475.00m);
 
-                    MessageBox.Show("Data seeding completed.");
                 }
             }
         }
