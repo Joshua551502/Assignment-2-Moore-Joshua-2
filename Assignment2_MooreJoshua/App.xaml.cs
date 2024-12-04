@@ -24,6 +24,12 @@ namespace Assignment2_MooreJoshua
         {
             base.OnStartup(e);
 
+            // Set DataDirectory to the project's root directory
+            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            string projectRoot = Directory.GetParent(baseDirectory).Parent.Parent.FullName;
+
+            AppDomain.CurrentDomain.SetData("DataDirectory", projectRoot);
+
             try
             {
                 RunLogic();
@@ -33,6 +39,8 @@ namespace Assignment2_MooreJoshua
                 MessageBox.Show($"An error occurred: {ex.Message}");
             }
         }
+
+
         /// <summary>
         /// Author: Joshua Moore
         /// Course: .Net Technologies using C#
