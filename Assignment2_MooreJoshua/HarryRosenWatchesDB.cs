@@ -18,14 +18,13 @@ namespace Assignment2_MooreJoshua
         /// Date Created: 2024-12-01
         /// </summary>
         public HarryRosenWatchesDB()
-            : base()
+            : base("HarryRosenWatchesDB") // Matches the connection string name
         {
-            Database.SetInitializer(new DropCreateDatabaseAlways<HarryRosenWatchesDB>());
-
-
-
+            Database.SetInitializer(new CreateDatabaseIfNotExists<HarryRosenWatchesDB>());
         }
 
+
         public DbSet<Item> Items { get; set; }
+
     }
 }

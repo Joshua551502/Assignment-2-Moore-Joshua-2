@@ -40,8 +40,10 @@ namespace Assignment2_MooreJoshua
         /// </summary>
         private void RunLogic()
         {
+
             using (var context = new HarryRosenWatchesDB())
             {
+                context.Database.Initialize(force: true);
                 if (!context.Database.Exists())
                 {
                     MessageBox.Show("Database does not exist. Creating and seeding database...");

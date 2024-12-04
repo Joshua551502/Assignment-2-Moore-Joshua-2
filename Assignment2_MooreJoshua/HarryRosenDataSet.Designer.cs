@@ -935,7 +935,7 @@ namespace Assignment2_MooreJoshua.HarryRosenWatchesDBDataSetTableAdapters {
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [Items] ([ItemName], [ItemDescription], [ItemPrice], [ItemType], [Ite" +
                 "mImageSource])  VALUES (@ItemName, @ItemDescription, @ItemPrice, @ItemType, @Ite" +
-                "mImageSource); \n";
+                "mImageSource); \r\n";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ItemName", global::System.Data.SqlDbType.NVarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, "ItemName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ItemDescription", global::System.Data.SqlDbType.NVarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, "ItemDescription", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -959,7 +959,7 @@ SELECT ItemId, ItemName, ItemDescription, ItemPrice FROM Items WHERE (ItemId = @
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Assignment2_MooreJoshua.Properties.Settings.Default.Assignment2_MooreJoshua_HarryRosenWatchesDBConnectionString;
+            this._connection.ConnectionString = global::Assignment2_MooreJoshua.Properties.Settings.Default.HarryRosenWatchesDB;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

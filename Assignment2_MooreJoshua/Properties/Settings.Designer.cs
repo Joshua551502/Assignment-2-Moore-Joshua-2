@@ -25,34 +25,12 @@ namespace Assignment2_MooreJoshua.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("data source=(LocalDb)\\MSSQLLocalDB;initial catalog=Assignment2_MooreJoshua.HarryR" +
-            "osenWatchesDB;integrated security=True;MultipleActiveResultSets=True;App=EntityF" +
-            "ramework")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DatabaseHarry" +
+            "Rosen.mdf;Integrated Security=True;MultipleActiveResultSets=True;App=EntityFrame" +
+            "work")]
         public string HarryRosenWatchesDB {
             get {
                 return ((string)(this["HarryRosenWatchesDB"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("data source=(LocalDb)\\MSSQLLocalDB;initial catalog=Assignment2_MooreJoshua.HarryR" +
-            "osenWatchesDB;integrated security=True;MultipleActiveResultSets=True;App=EntityF" +
-            "ramework")]
-        public string Assignment2_MooreJoshua_HarryRosenWatchesDBConnectionString {
-            get {
-                return ((string)(this["Assignment2_MooreJoshua_HarryRosenWatchesDBConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\AppData\\Datab" +
-            "aseHarryRosen.mdf;Integrated Security=True;MultipleActiveResultSets=True;")]
-        public string DatabaseHarryRosenMDF {
-            get {
-                return ((string)(this["DatabaseHarryRosenMDF"]));
             }
         }
     }

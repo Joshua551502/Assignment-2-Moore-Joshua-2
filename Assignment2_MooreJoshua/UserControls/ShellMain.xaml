@@ -149,47 +149,7 @@
                         </RadioButton>
                     </StackPanel>
 
-                    <!--  Bottom Left Panel Database Connectivity Status  -->
-                    <StackPanel
-                    Grid.Row="2"
-                    Height="50"
-                    VerticalAlignment="Bottom"
-                    Background="#ff333b2c"
-                    Orientation="Horizontal">
-
-                        <Border
-                        x:Name="ConnectedDB"
-                        Width="30"
-                        Height="30"
-                        Margin="18,0,5,0"
-                        Background="#3BFF6F"
-                        CornerRadius="25"
-                        Visibility="Visible" />
-
-                        <Border
-                        x:Name="DisconnectedDB"
-                        Width="30"
-                        Height="30"
-                        Margin="18,0,0,0"
-                        Background="Red"
-                        CornerRadius="25"
-                        Visibility="Collapsed" />
-
-                        <StackPanel VerticalAlignment="Center">
-                            <Label
-                            Margin="0,-5,0,-5"
-                            Content="Database"
-                            FontWeight="SemiBold"
-                            Foreground="White" />
-                            <Label
-                            x:Name="StatusDB"
-                            Margin="0,-8,0,-5"
-                            Content="Connected"
-                            FontSize="10"
-                            FontWeight="SemiBold"
-                            Foreground="Gray" />
-                        </StackPanel>
-                    </StackPanel>
+                    
 
                     <!--  Page Title, Content And Command Buttons  -->
                     <Grid
